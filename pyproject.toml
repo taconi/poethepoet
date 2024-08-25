@@ -16,6 +16,7 @@ python = ">=3.8"
 pastel = "^0.2.1"
 tomli  = ">=1.2.2"
 poetry = {version = "^1.0", allow-prereleases = true, optional = true}
+pyyaml = "^6.0.2"
 
 [tool.poetry.group.ci.dependencies]
 black      = "^23.3.0"
@@ -30,7 +31,8 @@ virtualenv = "^20.14.1"
 poe_test_helpers = { path = "./tests/fixtures/packages/poe_test_helpers" }
 
 [tool.poetry.group.dev.dependencies]
-bpython    = "^0.24"
+bpython      = "^0.24"
+types-pyyaml = "^6.0.12.20240808"
 
 [tool.poetry.group.docs.dependencies]
 furo                = "^2023.3.27"
